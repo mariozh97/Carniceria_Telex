@@ -10,16 +10,13 @@
     --background-dark: #2F4F4F;
     --border-radius: 8px;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    --font-main: 'Roboto', sans-serif; /* Se mantiene como fuente principal si no se sobrescribe */
+    --font-main: 'Roboto', sans-serif; 
     --font-heading: 'Playfair Display', serif;
     --transition: all 0.3s ease;
     --red-button-color: #C62828;
     --red-button-hover: #8E0000;
 }
 
-/* Importación de Google Fonts */
-/* He añadido 'Merriweather' y 'Roboto' (si aún no estaba para el body o headings) */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 
 /* Estilos globales y reset */
@@ -213,9 +210,9 @@ nav a:hover::after {
 }
 
 #quienes-somos p {
-    font-family: 'Merriweather', serif; /* Nueva fuente: Merriweather */
-    font-weight: bold; /* Texto en negrita */
-    font-size: 1.1rem; /* Ajuste del tamaño para que no sea tan grande */
+    font-family: 'Merriweather', serif; 
+    font-weight: bold; 
+    font-size: 1.1rem; 
 }
 
 /* Estilos de la sección Productos */
@@ -274,8 +271,8 @@ nav a:hover::after {
 }
 
 .item-producto p {
-    font-family: 'Roboto', sans-serif; /* Se mantiene Roboto */
-    font-weight: bold; /* Texto en negrita */
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
     padding: 0 1rem;
     background-color: transparent;
     color: var(--text-color);
@@ -446,7 +443,6 @@ footer {
     color: var(--secondary-color);
 }
 
-/* Media Queries para Responsive Design */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
