@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carnicería Telex. La mejor selección de carnes frescas y de calidad.">
+    <meta name="keywords" content="carnicería, carne fresca, ternera, cerdo, pollo, embutidos, tradicional, carniceria telex">
+    <meta name="author" content="MARIO-ZURDO">
+    <title>Carnicería Telex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#inicio" aria-label="Volver al inicio">Carnicería Telex</a></h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li>
+                        <a href="#tienda" aria-label="Ver carrito de compras" class="cart-icon-link">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="hero-seccion">
+            <img src="img/hero.avif" alt="Mostrador de carnicería con variedad de carnes frescas">
+            <h2>Tradición y calidad</h2>
+            <p>Descubre nuestro compromiso con el cliente</p>
+            <a href="#productos" class="button">Ver productos</a>
+        </section>
+
+        <section id="quienes-somos">
+            <h2>Nuestra historia</h2>
+            <p>Carnicería Télex es una empresa con una sólida trayectoria, fundada en 1975, especializada en la producción y comercialización de productos cárnicos de la más alta calidad.
+
+Nuestra sede se encuentra en Cenicientos, Madrid, donde disponemos de modernas instalaciones. Estas incluyen una sala de despiece y elaboración, una zona dedicada a la atención al público, y cámaras frigoríficas y de congelación, todo diseñado para garantizar la óptima conservación de nuestros productos.
+
+Con décadas de experiencia, en Carnicería Télex nos enorgullece ofrecer a nuestros clientes productos frescos y elaborados con la dedicación y el saber hacer que nos caracterizan desde hace casi 50 años.</p>
+        </section>
+
+        <section id="productos">
+            <h3>Nuestros mejores productos</h3>
+            <div class="grid-productos">
+                <article class="item-producto">
+                    <img src="img/ternera.jpg" alt="Ternera Avileña">
+                    <h4>Ternera Avileña</h4>
+                    <p>Nuestra joya de la corona, nuestra ternera avileña. Criada en nuestros pastos de Cebreros, provincia de Ávila.</p>
+                    <button class="boton-pequeño">Ver Detalles</button>
+                </article>
+
+                <article class="item-producto">
+                    <img src="img/cerdo.jpg" alt="Cerdo ibérico">
+                    <h4>Cerdo ibérico</h4>
+                    <p>Criado a base de bellotas, en nuestras dehesas extremeñas.</p>
+                    <button class="boton-pequeño">Ver Detalles</button>
+                </article>
+
+                <article class="item-producto">
+                    <img src="img/pollo.jpg" alt="Pollo de corral">
+                    <h4>Pollo de corral</h4>
+                    <p>Pollos criados en libertad, alimentados a base de maíz.</p>
+                    <button class="boton-pequeño">Ver Detalles</button>
+                </article>
+
+                <article class="item-producto">
+                    <img src="img/cordero.jpg" alt="Cordero lechal">
+                    <h4>Cordero lechal</h4>
+                    <p>Tierno y con sabor suave, procedente de las tierras de Toledo.</p>
+                    <button class="boton-pequeño">Ver Detalles</button>
+                </article>
+
+                <article class="item-producto">
+                    <img src="img/embutidos.jpg" alt="Embutidos caseros">
+                    <h4>Embutidos caseros</h4>
+                    <p>Amplia variedad de embutidos elaborados de manera artesanal.</p>
+                    <button class="boton-pequeño">Ver Detalles</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="ofertas">
+            <h3>Ofertas de la semana</h3>
+            <article class="item-ofertas">
+                <h3>20% de Descuento en Chuletón de Ternera Avileña</h3>
+                <p>Aprovecha esta oferta por tiempo limitado. ¡No te quedes sin el tuyo!</p>
+            </article>
+
+            <article class="item-ofertas">
+                <h3>3 por 2 en Salchichas Frescas</h3>
+                <p>Stock limitado. ¡Ideal para barbacoas!</p>
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <form class="contacto-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="8" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit" class="boton">Enviar Mensaje</button>
+            </form>
+
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i> Avenida de Madrid, 20, 28650 Cenicientos, España</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+34918642601">918 64 26 01</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@carniceriatelex.es">info@carniceriatelex.es</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Carnicería Telex. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://facebook.com/carniceriatelex" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/carniceriatelex" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/carniceriatelex" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/34918642601" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+   
